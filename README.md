@@ -19,7 +19,7 @@ There are different model type in the trainer parameter since we tried different
 
 1. GPT-2, model_type:gpt2
 2. The word frequency model, model_type:gpt2-unigram-rnn-window
-3. The contextual model, model_type:gpt2-vocab-repr-rnn-window-weight
+3. The $contextual$ model, model_type:gpt2-vocab-repr-rnn-window-weight
 4. The $contextual^2$ model, model_type: gpt2-vocab-repr-rnn-window-sigmoid-attention.
 
 We actually tried other ablations models, but did not included into the paper, you can refer to future_language_model_trainer.py to see corresponding models.
@@ -32,7 +32,7 @@ We actually tried other ablations models, but did not included into the paper, y
 
 We provide several evaluation tools in [evaluation_tools](https://github.com/jlab-nlp/Future-Language-Modeling/tree/main/evaluation_tools).
 
-For the simple perplexity score, use  [train_future_language_model.sh](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/train_future_language_model.sh)  with only -eval to obtain the loss, and then  use $e^{loss}$ as  to compute the perplexity in the validation set and test set.
+For the simple perplexity score, use  [train_future_language_model.sh](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/train_future_language_model.sh)  with only -eval to obtain the loss, and then  use $e^{loss}$ to compute the perplexity in the validation set and test set.
 
 For the content perplexity score, use [compute_perplexity.sh](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/evaluation_tools/compute_perplexity.sh), please include correct saved model path, you can change your test file in the line [360](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/evaluation_tools/compute_perplexity.py#L360C1-L360C44) of [compute_perplexity.py](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/evaluation_tools/compute_perplexity.py).
 
