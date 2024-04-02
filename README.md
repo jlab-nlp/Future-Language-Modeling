@@ -24,11 +24,11 @@ There are different model type in the trainer parameter since we tried different
 
 We actually tried other ablations models, but did not included into the paper, you can refer to future_language_model_trainer.py to see corresponding models.
 
-# Generation
+## Generation
 
 - Use [generate.sh](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/generate.sh) to generate, remember to include the correct model_type and correct saved model path.
 
-# Evaluation
+## Evaluation
 
 We provide several evaluation tools in [evaluation_tools](https://github.com/jlab-nlp/Future-Language-Modeling/tree/main/evaluation_tools).
 
@@ -36,13 +36,11 @@ For the simple perplexity score, use  [train_future_language_model.sh](https://g
 
 For the content perplexity score, use [compute_perplexity.sh](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/evaluation_tools/compute_perplexity.sh), please include correct saved model path, you can change your test file in the line [360](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/evaluation_tools/compute_perplexity.py#L360C1-L360C44) of [compute_perplexity.py](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/evaluation_tools/compute_perplexity.py).
 
-For the content meteor score, use [evaluate.sh](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/evaluation_tools/evaluate.sh), please include correct generated file path and test file path.
+For the content meteor score, use [evaluate.sh](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/evaluation_tools/evaluate.sh), please include correct generated file path and test file path, this will generate a results pickle file. You can use [analysis.py](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/evaluation_tools/analysis.py) to view it.
 
+# Citation
 
-
-
-
-# Cite
+If you think this paper or code helps your research, please kindly cite:
 
 ```tex
 @inproceedings{
