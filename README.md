@@ -22,7 +22,7 @@ There are different model type in the trainer parameter since we tried different
 3. The $contextual$ model, model_type:gpt2-vocab-repr-rnn-window-weight
 4. The $contextual^2$ model, model_type: gpt2-vocab-repr-rnn-window-sigmoid-attention.
 
-We actually tried other ablations models, but did not included into the paper, you can refer to future_language_model_trainer.py to see corresponding models.
+We actually tried other ablations models, but did not include into the paper, you can refer to future_language_model_trainer.py to see corresponding models.
 
 ## Generation
 
