@@ -1,0 +1,4 @@
+git+https://github.com/huggingface/transformers
+datasets
+nltk
+langdetect
