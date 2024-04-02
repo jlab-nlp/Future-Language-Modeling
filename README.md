@@ -38,7 +38,7 @@ For the content perplexity score, use [compute_perplexity.sh](https://github.com
 
 For the content meteor score, use [evaluate.sh](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/evaluation_tools/evaluate.sh), please include correct generated file path and test file path, this will generate a results pickle file. You can use [analysis.py](https://github.com/jlab-nlp/Future-Language-Modeling/blob/main/evaluation_tools/analysis.py) to view it.
 
-# Citation
+## Citation
 
 If you think this paper or code helps your research, please kindly cite:
 
